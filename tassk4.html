@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<style>                                    
+input[type="button"] {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style> 
+<body>
+    <header><h1>Time and Date </h1></header>
+   
+        <input type="button" value="show date" name="show date" onclick="date()"></input>
+        <input type="button" value="show time" name="show time" onclick="time()"></input>
+   
+    <p id="result"></p>
+    <script>
+        function date(){
+            const currentDate= new Date();
+            const formatted_Date=currentDate.toDateString();
+            document.getElementById("result").innerHTML="Today's Date is "+formatted_Date;
+        }
+        function time(){
+            const time=new Date();
+            const formatted_time=time.toTimeString();
+            document.getElementById("result").innerHTML="Today's Date is "+formatted_time;
+
+       }
+    </script>  
+    <p>Made by Deepank</p>
+</body>
+</html>
